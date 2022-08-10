@@ -1,0 +1,96 @@
+.hero {
+    min-height: 100vh;
+    overflow: hidden;
+    .container {
+        @media only screen and (min-width: 900px){
+            display: flex;
+            justify-content: space-between;
+        }
+        .heroContent {
+            @media only screen and (min-width: 900px){
+                flex-basis: 55%;
+                max-width: 40%;
+                margin: 0 auto;
+            }
+            .logo{
+                width: 1005;
+                padding: 1.5rem 1rem;
+            }
+            .heroImgMob {
+                @media only screen and (min-width: 900px){
+                    display: none;
+                }
+                img {
+                    max-width: 100%;
+                    height: 18rem;
+                }
+            }
+            .textWrapper{
+                @media only screen and (min-width: 900px){
+                    display: flex;
+                    align-items: center;
+                    height: 85%;
+                }
+                .heroText{
+                    padding: 2rem 1rem;
+                    @media only screen and (min-width: 900px){
+                        padding: 0 1rem;
+                    }
+                    h1{
+                        max-width: 80%;
+                        margin-bottom: 0.5rem;
+                        @media only screen and (min-width: 900px){
+                            font-size: 3rem;
+                        }
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        line-height: 1.5rem;
+                        opacity: 0.8;
+                    }
+                    .ticks{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.8rem;
+                        margin: 1rem 0;
+                        .tick{
+                            display: flex;
+                            align-items: center;
+                            gap: 0.7rem;
+                        }
+                    }
+                    button{
+                        border: none;
+                        outline: none;
+                        background: #000;
+                        color: #fff;
+                        padding: 1rem 1.5rem;
+                        font-size: 1.1rem;
+                        font-family: 'Archivo', sans-serif;
+                        border-radius: 0.3rem;
+                        font-weight: 700;
+                    }
+                    .brands{
+                        margin-top: 1rem;
+                        P{
+                            opacity: 0.8;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .heroImg{
+            display: none;
+            @media only screen and (min-width: 900px){
+                display: block;
+                flex-basis: 45%;
+                img{
+                    max-width: 100%;
+                    height: 100vh;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
